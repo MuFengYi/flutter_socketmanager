@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="19529" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19519"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Flutter View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="FlutterViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-25" y="-44"/>
+        </scene>
+        <!--Play View Controller-->
+        <scene sceneID="i7C-qP-42L">
+            <objects>
+                <viewController storyboardIdentifier="PlayViewController" id="zKM-gu-3U3" customClass="PlayViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="ZAK-Hm-d2e"/>
+                        <viewControllerLayoutGuide type="bottom" id="f4K-Wj-cne"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="3Ft-Mi-6KH">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="aPe-rQ-VVf" customClass="PlayView">
+                                <rect key="frame" x="0.0" y="337.5" width="414" height="221"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="aPe-rQ-VVf" secondAttribute="height" multiplier="15:8" id="QSX-BA-uvI"/>
+                                </constraints>
+                            </view>
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bTy-v8-fcq">
+                                <rect key="frame" x="169" y="577.5" width="76" height="31"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="filled" title="保存aac"/>
+                                <connections>
+                                    <action selector="saveAacData:" destination="zKM-gu-3U3" eventType="touchUpInside" id="Om3-Qc-KzL"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="bTy-v8-fcq" firstAttribute="centerX" secondItem="3Ft-Mi-6KH" secondAttribute="centerX" id="MZ2-Qi-vb6"/>
+                            <constraint firstItem="aPe-rQ-VVf" firstAttribute="leading" secondItem="3Ft-Mi-6KH" secondAttribute="leading" id="MZ3-CF-ctd"/>
+                            <constraint firstItem="bTy-v8-fcq" firstAttribute="top" secondItem="aPe-rQ-VVf" secondAttribute="bottom" constant="20" id="NeN-2E-7RA"/>
+                            <constraint firstItem="aPe-rQ-VVf" firstAttribute="centerX" secondItem="3Ft-Mi-6KH" secondAttribute="centerX" id="O6m-r0-bS5"/>
+                            <constraint firstAttribute="trailing" secondItem="aPe-rQ-VVf" secondAttribute="trailing" id="RzH-DP-mXI"/>
+                            <constraint firstItem="aPe-rQ-VVf" firstAttribute="centerY" secondItem="3Ft-Mi-6KH" secondAttribute="centerY" id="l95-02-fgS"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="playView" destination="aPe-rQ-VVf" id="qbi-pP-PaJ"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="bj9-nE-naH" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="638" y="-1"/>
+        </scene>
+    </scenes>
+    <resources>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>

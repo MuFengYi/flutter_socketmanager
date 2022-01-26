@@ -1,0 +1,46 @@
+PODS:
+  - AAFramework (0.1.0)
+  - audioplayers (0.0.1):
+    - Flutter
+  - CocoaAsyncSocket (7.6.5)
+  - Flutter (1.0.0)
+  - flutter_socket_plugin (1.0.1):
+    - CocoaAsyncSocket
+    - Flutter
+  - path_provider_ios (0.0.1):
+    - Flutter
+
+DEPENDENCIES:
+  - AAFramework (from `/Users/haoke/AAFramework/`)
+  - audioplayers (from `.symlinks/plugins/audioplayers/ios`)
+  - Flutter (from `Flutter`)
+  - flutter_socket_plugin (from `.symlinks/plugins/flutter_socket_plugin/ios`)
+  - path_provider_ios (from `.symlinks/plugins/path_provider_ios/ios`)
+
+SPEC REPOS:
+  trunk:
+    - CocoaAsyncSocket
+
+EXTERNAL SOURCES:
+  AAFramework:
+    :path: "/Users/haoke/AAFramework/"
+  audioplayers:
+    :path: ".symlinks/plugins/audioplayers/ios"
+  Flutter:
+    :path: Flutter
+  flutter_socket_plugin:
+    :path: ".symlinks/plugins/flutter_socket_plugin/ios"
+  path_provider_ios:
+    :path: ".symlinks/plugins/path_provider_ios/ios"
+
+SPEC CHECKSUMS:
+  AAFramework: 8297efa01931c7933d8473ca3ef581c93c65f544
+  audioplayers: 455322b54050b30ea4b1af7cd9e9d105f74efa8c
+  CocoaAsyncSocket: 065fd1e645c7abab64f7a6a2007a48038fdc6a99
+  Flutter: 50d75fe2f02b26cc09d224853bb45737f8b3214a
+  flutter_socket_plugin: 62af2593ea11e97a484573c25bb7c05ba52aa042
+  path_provider_ios: 7d7ce634493af4477d156294792024ec3485acd5
+
+PODFILE CHECKSUM: d30805edd22c2edd76a1179136bfd4b11ef6ec88
+
+COCOAPODS: 1.11.2
